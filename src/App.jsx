@@ -1,4 +1,5 @@
 import './App.css';
+import { useState, useEffect } from 'react'
 
 const width = 8;
 const candyColors = [
@@ -12,6 +13,8 @@ const candyColors = [
 
 const App = () => {
 
+  const [currentColorArrangement, setCurrentColorArrangement] = useState([]);
+
   const createBoard = () => {
     const randomColorArrangement = [];
     for (let i = 0; i < width * width; i++) {
@@ -20,13 +23,20 @@ const App = () => {
     }
 
     console.log('random ', randomColorArrangement);
+    setCurrentColorArrangement(randomColorArrangement);
   } 
 
-  createBoard();
+
+  useEffect(() => {
+    createBoard();
+  },[])
+  
 
   return (
     <div className="App">
-    
+      <div className='game'>
+          
+      </div>
     </div>
   );
 }
