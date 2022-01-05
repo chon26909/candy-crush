@@ -15,6 +15,13 @@ const App = () => {
 
   const [currentColorArrangement, setCurrentColorArrangement] = useState([]);
 
+  const checkForColumeOfThree = () => {
+    for(let i; i < 47; i++) {
+      const columeOfThree
+    }
+  }
+
+
   const createBoard = () => {
     const randomColorArrangement = [];
     for (let i = 0; i < width * width; i++) {
