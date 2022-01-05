@@ -17,7 +17,12 @@ const App = () => {
 
   const checkForColumeOfThree = () => {
     for(let i; i < 47; i++) {
-      const columeOfThree
+      const columeOfThree = [i, i + width, i + width * 2];
+      const decideedColor = currentColorArrangement[i];
+
+      if (columeOfThree.every(square => currentColorArrangement[square] === decideedColor)) {
+        columeOfThree.forEach(sq => currentColorArrangement[square] = '')
+      }
     }
   }
 
