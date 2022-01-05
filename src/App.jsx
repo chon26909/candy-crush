@@ -44,8 +44,8 @@ const App = () => {
   },[])
 
   useEffect(() => {
-   
-  }, [])
+    checkForColumeOfThree()
+  }, [checkForColumeOfThree])
   
 
   return (
