@@ -42,6 +42,10 @@ const App = () => {
   useEffect(() => {
     createBoard();
   },[])
+
+  useEffect(() => {
+   
+  }, [])
   
 
   return (
